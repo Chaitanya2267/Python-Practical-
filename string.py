@@ -1,3 +1,15 @@
+# 1.
+# name='ved'
+# print(name)
+
+# city="Kolhapur"
+# print(city)
+
+# Message="""Python is programming language.
+# It used in web development.
+#         """
+# print(Message)
+
 # 2.
 # name='ved'
 # print(name)
@@ -64,8 +76,9 @@
 # print("Last characte", s[-1])
 
 # 9.
-from collections import Counter
+# from collections import Counter
 
-text = "madam"
-frequencies = Counter(text)
-print(dict(frequencies))  
+# text = "madam"
+# frequencies = Counter(text)
+# print(dict(frequencies))  
+

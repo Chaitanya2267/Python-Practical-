@@ -111,6 +111,7 @@
 
 # --------------------------------------------------------------------------------------------------
 # 8. Frequency of a Character
+
 # text = input("Enter a string: ")
 # target = input("Enter a character: ")
 # count = 0
@@ -121,6 +122,7 @@
 
 # --------------------------------------------------------------------------------------------------
 # 9. First and Last Character
+
 # text = input("Enter a string: ")  
 # if text == " ":
 #     print("The string is empty.")
@@ -132,4 +134,60 @@
 # --------------------------------------------------------------------------------------------------
 # 10. ASCII Values 
 
+# text = input("Enter a string: ")
+# for ch in text:
+#     print(ch, "-->", ord(ch))
+
 # --------------------------------------------------------------------------------------------------
+# 11. Word Count 
+
+# text = input("Enter a String: ")
+# count = 1
+# for ch in text:
+#     if ch == " ":
+#         count += 1
+# print("Number of words: ", count)
+
+# --------------------------------------------------------------------------------------------------
+# 12. Longest Word  
+
+# text = input("Enter a String: ")
+# words = text.split()
+# longest = ""
+# for word in words:
+#     if len(word) > len(longest):
+#         longest = word
+# print("Longest word: ", longest)
+
+# --------------------------------------------------------------------------------------------------
+# 13. Shortest Word
+
+# text = input("Enter a string: ")
+# words = text.split()
+# shortest = words[0]
+# for word in words:
+#     if len(word) < len(shortest):
+#         shortest = word
+# print("Shortest word: ", shortest)
+
+# --------------------------------------------------------------------------------------------------
+# 14. Title Case  
+
+# text = input("Enter a string: ")
+# print("Title case: ", text.title())
+
+# text = input("Enter a string: ")
+# result = ""
+# for i in range(len(text)):
+#     if i == 0 or text[i-1] == " ":
+#         result += text[i].upper()
+#     else:
+#         result += text[i]
+# print("Title Case: ", result)
+
+# --------------------------------------------------------------------------------------------------
+# 15. 
+
+
+# --------------------------------------------------------------------------------------------------
+# 16.

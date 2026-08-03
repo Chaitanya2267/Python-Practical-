@@ -186,8 +186,110 @@
 # print("Title Case: ", result)
 
 # --------------------------------------------------------------------------------------------------
-# 15. 
+# 15. Duplicate Characters  
 
+# text = input("Enter a string: ")
+# printed = ""
+# for ch in text:
+#     if ch not in printed:
+#         count = 0
+#         for c in text:
+#             if ch == c:
+#                 count += 1
+#         if count > 1:
+#             print(ch)
+#             printed += ch
+
+# text = input("Enter a string: ")
+# freq = {}
+# for ch in text:
+#     freq[ch] = freq.get(ch, 0) + 1
+# for ch in freq:
+#     if freq[ch] > 1:
+#         print(ch)
 
 # --------------------------------------------------------------------------------------------------
-# 16.
+# 16. Character Frequency  
+
+# text = input("Enter a string: ")
+# printed = ""
+# for ch in text:
+#     if ch not in printed:
+#         count = 0
+#         for c in text:
+#             if ch == c:
+#                 count += 1
+#         print(ch, "-->", count)
+#         printed += ch 
+
+# text = input("Enter a string: ")
+# freq = {}
+# for ch in text:
+#     freq[ch] = freq.get(ch, 0) + 1
+# for ch in freq:
+#     print(ch, "-->", freq[ch])
+
+# --------------------------------------------------------------------------------------------------
+# 17. Anagram Check  
+
+# text1 = input("Enter a string: ")
+# text2 = input("Enter a string: ")
+# if sorted(text1) == sorted(text2):
+#     print("Anagrams")
+# else:
+#     print("Not Anagrams")
+
+# text1 = input("Enter a string: ")
+# text2 = input("Enter a string: ")
+# if len(text1) != len(text2):
+#     print("Not Anagrams")
+# else:
+#     flag = True
+#     for ch in text1:
+#         if text1.count(ch) != text2.count(ch):
+#             flag = False
+#             break
+#     if flag:
+#             print("Anagrams")
+#     else:
+#             print("Not Anagrams")
+
+# --------------------------------------------------------------------------------------------------
+# 18. Remove Duplicate Characters
+
+# text = input("Enter a string: ")
+# result = ""
+# for ch in text:
+#     if ch not in result:
+#         result += ch
+# print("After removing duplicates: ",result)
+
+# --------------------------------------------------------------------------------------------------
+# 19. Substring Search  
+
+# main = input("Enter the main string: ").lower()
+# sub = input("Enter the substring: ").lower()
+# if sub in main:
+#     print("Substring found")
+# else:
+#     print("Substring not found")
+
+# --------------------------------------------------------------------------------------------------
+# 20. Count Occurrences of a Word
+
+# sentence = input("Enter a sentence: ").lower()
+# target = input("Enter the word to search: ").lower()
+# words = sentence.split()
+# count = 0
+# for word in words:
+#     if word == target:
+#         count += 1
+# print("Occurrences =", count)
+
+sentence = input("Enter a sentence: ").lower()
+target = input("Enter the word: ").lower()
+words = sentence.split()
+print("Occurrences =", words.count(target))
+
+# --------------------------------------------------------------------------------------------------
+# 21. Password Validator 

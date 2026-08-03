@@ -1,5 +1,6 @@
 # 1. String Length 
- 
+# Write a program to input a string and display its length without using the len() function.  
+
 # text = input("Enter a string: ")
 # count = 0;
 # for i in text:
@@ -8,6 +9,7 @@
 
 # --------------------------------------------------------------------------------------------------
 # 2. Character Count  
+# Count the number of vowels, consonants, digits, spaces, and special characters in a given string.
 
 # text = input("Enter a string: ")
 # vowels = 0
@@ -37,6 +39,7 @@
 
 # --------------------------------------------------------------------------------------------------
 # 3. Reverse a String
+# Reverse the given string without using built-in reverse functions. 
 
 # text = input("Enter a string: ")
 # reverse = ""
@@ -49,6 +52,7 @@
 
 # --------------------------------------------------------------------------------------------------
 # 4. Palindrome Check
+# Check whether the entered string is a palindrome.  
 
 # text = input("Enter a string: ")
 # reverse = ""
@@ -67,6 +71,7 @@
 
 # --------------------------------------------------------------------------------------------------
 # 5. Uppercase and Lowercase Count
+# Count the number of uppercase and lowercase letters in a string.  
 
 # text = input("Enter a string: ")
 # uppercase = 0
@@ -84,6 +89,7 @@
 
 # --------------------------------------------------------------------------------------------------
 # 6. Replace Characters  
+# Replace all occurrences of a given character with another character.  
 
 # text = input("Enter a string: ")
 # org = input("Enter character to replace: ")
@@ -98,6 +104,7 @@
 
 # --------------------------------------------------------------------------------------------------
 # 7. Remove Spaces  
+# Remove all spaces from the input string.  
 
 # text = input("Enter a string: ")
 # result = ""
@@ -111,6 +118,7 @@
 
 # --------------------------------------------------------------------------------------------------
 # 8. Frequency of a Character
+# Find the number of times a specified character appears in a string. 
 
 # text = input("Enter a string: ")
 # target = input("Enter a character: ")
@@ -122,6 +130,7 @@
 
 # --------------------------------------------------------------------------------------------------
 # 9. First and Last Character
+# Print the first and last character of a string.  
 
 # text = input("Enter a string: ")  
 # if text == " ":
@@ -133,6 +142,7 @@
 
 # --------------------------------------------------------------------------------------------------
 # 10. ASCII Values 
+# Display each character of a string along with its ASCII value.
 
 # text = input("Enter a string: ")
 # for ch in text:
@@ -140,6 +150,7 @@
 
 # --------------------------------------------------------------------------------------------------
 # 11. Word Count 
+# Count the total number of words in a sentence.  
 
 # text = input("Enter a String: ")
 # count = 1
@@ -150,6 +161,7 @@
 
 # --------------------------------------------------------------------------------------------------
 # 12. Longest Word  
+# Find the longest word in a given sentence. 
 
 # text = input("Enter a String: ")
 # words = text.split()
@@ -161,6 +173,7 @@
 
 # --------------------------------------------------------------------------------------------------
 # 13. Shortest Word
+# Find the shortest word in a sentence. 
 
 # text = input("Enter a string: ")
 # words = text.split()
@@ -172,6 +185,7 @@
 
 # --------------------------------------------------------------------------------------------------
 # 14. Title Case  
+# Convert the first letter of every word to uppercase. 
 
 # text = input("Enter a string: ")
 # print("Title case: ", text.title())
@@ -187,6 +201,7 @@
 
 # --------------------------------------------------------------------------------------------------
 # 15. Duplicate Characters  
+# Print all duplicate characters in a string.  
 
 # text = input("Enter a string: ")
 # printed = ""
@@ -210,6 +225,7 @@
 
 # --------------------------------------------------------------------------------------------------
 # 16. Character Frequency  
+# Display the frequency of every character in a string.
 
 # text = input("Enter a string: ")
 # printed = ""
@@ -231,6 +247,7 @@
 
 # --------------------------------------------------------------------------------------------------
 # 17. Anagram Check  
+# Check whether two strings are anagrams. 
 
 # text1 = input("Enter a string: ")
 # text2 = input("Enter a string: ")
@@ -256,6 +273,7 @@
 
 # --------------------------------------------------------------------------------------------------
 # 18. Remove Duplicate Characters
+# Remove duplicate characters while maintaining the original order. 
 
 # text = input("Enter a string: ")
 # result = ""
@@ -266,6 +284,7 @@
 
 # --------------------------------------------------------------------------------------------------
 # 19. Substring Search  
+# Check whether a given substring exists in the main string. 
 
 # main = input("Enter the main string: ").lower()
 # sub = input("Enter the substring: ").lower()
@@ -276,6 +295,7 @@
 
 # --------------------------------------------------------------------------------------------------
 # 20. Count Occurrences of a Word
+# Count how many times a specific word appears in a sentence. 
 
 # sentence = input("Enter a sentence: ").lower()
 # target = input("Enter the word to search: ").lower()
@@ -286,10 +306,13 @@
 #         count += 1
 # print("Occurrences =", count)
 
-sentence = input("Enter a sentence: ").lower()
-target = input("Enter the word: ").lower()
-words = sentence.split()
-print("Occurrences =", words.count(target))
+# sentence = input("Enter a sentence: ").lower()
+# target = input("Enter the word: ").lower()
+# words = sentence.split()
+# print("Occurrences =", words.count(target))
 
 # --------------------------------------------------------------------------------------------------
 # 21. Password Validator 
+# Validate a password based on these conditions:  
+# Minimum 8 characters, At least one uppercase letter, One lowercase letter, One digit, One special character 
+

@@ -133,3 +133,61 @@
 
 # print("Distance=", distance(points[i], points[j]))
 # print("Farthest Point=", farthest_points(points))
+
+# --------------------------------------------------------------------------------------------------
+# 3. a configuration system for a web server
+
+# server_ip = ("192.168.1.10",)
+
+# allowed_ips = [
+#     "192.168.1.5",
+#     "192.168.1.6"
+# ]
+
+# def update_allowed_ips():
+#     print("\n1. Add IP")
+#     print("2. Remove IP")
+
+#     choice = int(input("Enter choice: "))
+
+#     if choice == 1:
+#         ip = input("Enter IP to add: ")
+#         allowed_ips.append(ip)
+#         print("IP added successfully")
+
+#     elif choice == 2:
+#         ip = input("Enter IP to remove: ")
+#         if ip in allowed_ips:
+#             allowed_ips.remove(ip)
+#             print("IP removed successfully")
+#         else:
+#             print("IP not found")
+
+#     else:
+#         print("Invalid choice")
+
+# def display_configuration():
+#     print("\nServer configuration")
+#     print("Server IP: ", server_ip)
+#     print("Allowed IPs: ", allowed_ips)
+
+# while True:
+#     print("\n1. Update Allowed IPs")
+#     print("2. Display configuration")
+#     print("3. Exit")
+
+#     if choice == 1:
+#         update_allowed_ips()
+
+#     elif choice == 2:
+#         display_configuration()
+
+#     elif choice == 3:
+#         print("Program ended.")
+#         break
+
+#     else:
+#         print("Invalid choice")
+
+# --------------------------------------------------------------------------------------------------
+# 4. manage two different projects in your company

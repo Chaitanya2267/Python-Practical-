@@ -191,3 +191,56 @@
 
 # --------------------------------------------------------------------------------------------------
 # 4. manage two different projects in your company
+
+# project_a = set(input("Enter Employees of Project A:").split())
+# project_b = set(input("Enter Employees of Project B:").split())
+
+# all_employees = project_a.union(project_b)
+# both_projects = project_a.intersection(project_b)
+# only_project_a = project_a - project_b
+# only_project_b = project_b - project_a
+
+# print("Total unique Employees:", all_employees)
+# print("Employees in both projects:", both_projects)
+# print("Employees only in Project A:", only_project_a)
+# print("Employees only in Project B:", only_project_b)
+
+# --------------------------------------------------------------------------------------------------
+# 5. build a simple text analysis tool
+
+# import string
+# text = input("Enter a paragraph: ")
+# text = text.translate(str.maketrans("", "", string.punctuation))
+# words = text.split()
+# print("Total number of words: ", len(words))
+
+# frequency = {}
+# for word in words:
+#     word = word.lower()
+#     if word in frequency:
+#         frequency[word] += 1
+#     else:
+#         frequency[word] = 1
+# print("\nWord frequency:")
+
+# for word, count in frequency.items():
+#     print(word, ":", count)
+
+# sorted_words = sorted(
+#     frequency.items(),
+#     key=lambda x:x[1],
+#     reverse=True
+# )
+
+# print("\nTop 3 most frequency wprds:")
+# for word, count in sorted_words[:3]:
+#     print(word, ":", count)
+
+# vowels = "aeiou"
+# vowel_count = 0
+# for char in text.lower():
+#     if char in vowels:
+#         vowel_count += 1
+# print("\nNumber of vowels:", vowel_count)
+
+# --------------------------------------------------------------------------------------------------

@@ -244,3 +244,36 @@
 # print("\nNumber of vowels:", vowel_count)
 
 # --------------------------------------------------------------------------------------------------
+# 6. analyze the vocabulary used in two different books
+
+# import string
+
+# book1 = input("Enter text for Book 1: ")
+# book2 = input("Enter text for Book 2: ")
+
+# book1 = book1.lower().translate(str.maketrans("", "", string.punctuation))
+# book2 = book2.lower().translate(str.maketrans("", "", string.punctuation))
+
+# words1 = set(book1.split())
+# words2 = set(book2.split())
+
+# print("\nUnique words in Book 1:")
+# print(words1)
+# print("\nUnique words in Book 1:")
+# print(words2)
+
+# common_words = words1 & words2
+# print("\nCommon words:")
+# print(common_words)
+
+# unique_book1 = words1 - words2
+# print("\nWords unique to book1:")
+# print(unique_book1)
+
+# unique_book2 = words2 - words1
+# print("\nWords unique to book2:")
+# print(unique_book2)
+
+# all_words = words1 | words2
+# print("\nTotal number of unique words access both books:")
+# print(len(all_words))

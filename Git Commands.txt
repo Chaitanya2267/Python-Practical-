@@ -1,0 +1,6 @@
+Git Commands
+
+git status
+git reset --hard origin/main
+git fetch origin
+git pull origin main

@@ -277,3 +277,162 @@
 # all_words = words1 | words2
 # print("\nTotal number of unique words access both books:")
 # print(len(all_words))
+
+# --------------------------------------------------------------------------------------------------
+# 7. develop an inventory system for a small store
+
+# inventory = {}
+
+# def add_product(name, quantity):
+#     """Add a new product to the inventory."""
+#     if name in inventory:
+#         print(f"{name} already exists.")
+#     else:
+#         inventory[name] = quantity
+#         print(f"{name} added with quantity {quantity}.")
+
+
+# def update_quantity(name, quantity):
+#     """Update the quantity of an existing product."""
+#     if name in inventory:
+#         inventory[name] = quantity
+#         print(f"{name} quantity updated to {quantity}.")
+
+#         if quantity == 0:
+#             remove_product(name)
+#     else:
+#         print(f"{name} not found in inventory.")
+
+
+# def remove_product(name):
+#     """Remove a product from the inventory."""
+#     if name in inventory:
+#         del inventory[name]
+#         print(f"{name} removed from inventory.")
+#     else:
+#         print(f"{name} not found in inventory.")
+
+
+# def highest_stock():
+#     """Display the product with the highest stock."""
+#     if inventory:
+#         product = max(inventory, key=inventory.get)
+#         print(f"Highest stock: {product} ({inventory[product]} units)")
+#     else:
+#         print("Inventory is empty.")
+
+
+# def total_products():
+#     """Display the total number of unique products."""
+#     print(f"Total unique products: {len(inventory)}")
+
+
+# add_product("Apples", 20)
+# add_product("Bread", 15)
+# add_product("Milk", 25)
+
+# update_quantity("Bread", 30)
+# highest_stock()
+# total_products()
+
+# update_quantity("Milk", 0)
+# total_products()
+
+# --------------------------------------------------------------------------------------------------
+# 8. check if two given strings are anagrams
+
+# from collections import Counter
+# import string
+
+# def normalize(text):
+#     """Remove spaces and punctuation, then convert to lowercase."""
+#     return "".join(
+#         char.lower()
+#         for char in text
+#         if char not in string.punctuation and not char.isspace()
+#     )
+
+
+# def are_anagrams(first, second):
+#     """Check whether two strings are anagrams."""
+#     first_normalized = normalize(first)
+#     second_normalized = normalize(second)
+
+#     return Counter(first_normalized) == Counter(second_normalized)
+
+
+# string1 = input("Enter the first string: ")
+# string2 = input("Enter the second string: ")
+
+# if are_anagrams(string1, string2):
+#     print("The strings are anagrams.")
+# else:
+#     print("The strings are not anagrams.")
+
+# --------------------------------------------------------------------------------------------------
+# 9.  develop an attendance system for a classroom
+
+# attendance = {
+#     "Monday": {"Alice", "Bob", "Charlie"},
+#     "Tuesday": {"Alice", "Bob"},
+#     "Wednesday": {"Alice", "Charlie"},
+#     "Thursday": {"Alice", "Bob", "Charlie"},
+#     "Friday": {"Alice", "Bob"}
+# }
+
+# all_days = set(attendance.values())
+# attended_all = set.intersection(*all_days)
+
+# all_students = set.union(*all_days)
+# attendance_count = {
+#     student: sum(student in students for students in attendance.values())
+#     for student in all_students
+# }
+
+# attended_once = {
+#     student for student, count in attendance_count.items()
+#     if count == 1
+# }
+
+# total_unique_students = len(all_students)
+
+# print("Students who attended all classes:", attended_all)
+# print("Students who attended only one class:", attended_once)
+# print("Total unique students:", total_unique_students)
+
+# --------------------------------------------------------------------------------------------------
+# 10.  counts the frequency of each character in a given string
+
+# def count_character_frequency(text, ignore_case):
+#     if ignore_case:
+#         text = text.lower()
+
+#     frequency = {}
+
+#     for character in text:
+#         frequency[character] = frequency.get(character, 0) + 1
+
+#     sorted_frequency = sorted(
+#         frequency.items(),
+#         key=lambda item: item[1],
+#         reverse=True
+#     )
+
+#     return sorted_frequency
+
+# text = input("Enter a string: ")
+# choice = input("Ignore case? (yes/no): ").strip().lower()
+
+# ignore_case = choice == "yes"
+# result = count_character_frequency(text, ignore_case)
+
+# print("\nCharacter frequencies:")
+
+# for character, count in result:
+#     display_character = {
+#         " ": "[space]",
+#         "\n": "[newline]",
+#         "\t": "[tab]"
+#     }.get(character, character)
+
+#     print(f"{display_character}: {count}")

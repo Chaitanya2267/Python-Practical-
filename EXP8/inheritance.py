@@ -79,27 +79,27 @@
 
 # 5. Hybrid Inheritance
 
-class Person:
-    def __init__(self, name):
-        self.name = name
+# class Person:
+#     def __init__(self, name):
+#         self.name = name
 
-class Academics(Person):
-    def __init__(self, name, marks):
-        super().__init__(name)
-        self.marks = marks
+# class Academics(Person):
+#     def __init__(self, name, marks):
+#         super().__init__(name)
+#         self.marks = marks
 
-class Sports(Person):
-    def __init__(self, name, sport_marks):
-        super().__init__(name)
-        self.sport_marks = sport_marks
+# class Sports(Person):
+#     def __init__(self, name, sport_marks):
+#         super().__init__(name)
+#         self.sport_marks = sport_marks
 
-class Student(Academics, Sports):
-    def __init__(self, name, marks, sport_marks):
-        Academics.__init__(self, name, marks)
-        Sports.__init__(self, name, sport_marks)
+# class Student(Academics, Sports):
+#     def __init__(self, name, marks, sport_marks):
+#         Academics.__init__(self, name, marks)
+#         Sports.__init__(self, name, sport_marks)
 
-    def total(self):
-        print(f"Name: {self.name}, Total Marks: {self.marks + self.sport_marks}")
+#     def total(self):
+#         print(f"Name: {self.name}, Total Marks: {self.marks + self.sport_marks}")
 
-obj = Student("Chaitanya", 85, 15)
-obj.total()
+# obj = Student("Chaitanya", 85, 15)
+# obj.total()

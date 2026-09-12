@@ -103,3 +103,53 @@
 
 # obj = Student("Chaitanya", 85, 15)
 # obj.total()
+
+# ------------------------------------------------------------------------------------------------
+
+# Multilevel inheritance with private & protected
+
+class Grandparent:
+    def __init__(self):
+        self._protected_var = "Protected from Grandparent"
+        self.__private_var = "Private from Grandparent"
+
+    def _protected_method(self):
+        print("Protected method in Grandparent")
+
+    def __private_method(self):
+        print("Private method in Grandparent")
+
+    def access_private(self):
+        # Public accessor for private members
+        print(self.__private_var)
+        self.__private_method()
+
+class Parent(Grandparent):
+    def __init__(self):
+        super().__init__()
+        self._protected_var = "Protected overridden in Parent"
+        self.__private_var = "Private in Parent"
+
+    def _protected_method(self):
+        print("Protected method in Parent")
+
+    def access_private(self):
+        print(self.__private_var)
+
+class Child(Parent):
+    def __init__(self):
+        super().__init__()
+        self._protected_var = "Protected overridden in Child"
+        self.__private_var = "Private in Child"
+
+    def show(self):
+        # Access protected variable
+        print("Accessing protected:", self._protected_var)
+        self._protected_method()
+
+        # Access private via accessor
+        self.access_private()
+
+obj = Child()
+obj.show()
+obj.access_private()   # Calls Child’s private accessor

@@ -1,0 +1,2 @@
+hello python!
+this is file handling program using with keyword

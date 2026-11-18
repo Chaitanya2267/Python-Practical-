@@ -1,0 +1,18 @@
+d = {"name": "csw", "age": 19, "city": "kop"}
+
+# print(d.keys())
+# print(d.values())
+# print(d.items())
+# print(d.get("name"))
+d.update({"age": 20})
+# print(d)
+d.pop("city")
+# print(d)
+d.popitem()
+# print(d)
+d.setdefault("course", "python")
+# print(d)
+new_d = d.copy()
+# print(new_d)
+d.clear()
+print(d)

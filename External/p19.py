@@ -1,0 +1,12 @@
+t = (40, 10, 30, 20, 50)
+
+# print(t.count(20))
+# print(t.index(30))
+# print(len(t))
+# print(max(t))
+# print(min(t))
+# print(sum(t))
+# print(sorted(t))
+t2 = t + (60, 70)
+# print(t2)
+# print(t[1:4])
